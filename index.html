@@ -1,0 +1,148 @@
+<!-->Change color to canadian</-->
+<html>
+<head>
+  <meta name="keywords" content="">
+  <meta name="author" content="Bernardo Estrada">
+  <meta name="description" content="My personal photography website.">
+  <link rel="icon" href="resources/images/logo2.png">
+  <title>Berni - Index</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="resources/css/bootstrap.css">
+  <link rel="stylesheet" href="resources/css/animation.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="resources/js/bootstrap.min.js"></script>
+  <script src="resources/js/animation.js"></script>
+  <script src="resources/js/scroll.js"></script>
+  <!--  <script src="resources/js/sticky.js"></script>-->
+  <script>
+    function asd() {
+      window.alert('Hello');
+    }
+  </script>
+</head>
+
+  <body class="background">
+  
+  <!--NavBar-->
+  <div class="menu-button-container">
+    <button type="button" class="c-hamburger c-hamburger--htx navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span>toggle menu</span>
+    </button>
+  </div>
+  <!--<nav id="nav" role="navigation" class="navbar navbar-custom"></nav>-->
+  <nav id="nav" role="navigation" class="navbar navbar-custom nav-back navbar-fixed-top"></nav>
+  <nav id="nav" role="navigation" class="navbar navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img src="resources/images/leaf.svg"></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Link <span class="sr-only">(current)</span></a></li>
+          <li><a href="#1">Link</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#1">1</a></li>
+              <li><a href="#2">2</a></li>
+              <li><a href="#3">3</a></li>
+              <li><a href="#4">4</a></li>
+              <li><a href="#5">5</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!--/NavBar-->
+
+    <div id="arrow">
+      <a class="previous"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+      <br>
+      <a class="next"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+    </div>
+  <!-- Container element -->
+    <section></section>
+    <div class="parallax" style="background-image: url(resources/images/bg1.jpg);" data-stellar-background-ratio="0.5">
+      <img src="resources/images/leaf.svg">
+      <h2>
+        Canada is
+        <a class="typewrite" data-period="2000" data-type='["cold.", "nice.", "beautiful.", "snowy.", "clean.", "educated.", "delicious.", "loving.", "colorful.", "peaceful.", "diverse.", "hockey.", "maple."]'>
+          <span class="wrap"></span>
+        </a>
+      </h2>
+      <div class="logo"></div>
+    </div>
+    <section></section>
+    <div id="1" class="parallax" style="background-image: url(resources/images/bg2.jpg); z-index:99999;" data-stellar-background-ratio="0.5"></div>
+    <section></section>
+    <div id="2" class="parallax" style="background-image: url(resources/images/bg3.jpg); z-index:99999;" data-stellar-background-ratio="0.5"></div>
+    <section></section>
+    <div id="3" class="parallax" style="background-image: url(resources/images/bg4.jpg); z-index:99999;" data-stellar-background-ratio="0.5"></div>
+    <section></section>
+    <div id="4" class="parallax" style="background-image: url(resources/images/bg5.jpg); z-index:99999;" data-stellar-background-ratio="0.5"></div>
+    <section></section>
+    <div id="5" class="parallax" style="background-image: url(resources/images/bg.png); z-index:99999;" data-stellar-background-ratio="0.5"></div>
+    <section></section>
+
+  <div class="img-grixd">
+    <div class="test"></div>
+    <div class="test2"></div>
+    <div class="test"></div>
+    <div class="test2"></div>
+    <div class="test"></div>
+    <div class="test2"></div>
+    <div class="test"></div>
+    <div class="test2"></div>
+    <div class="test"></div>
+  </div>
+
+  <script>
+    (function () {
+
+      "use strict";
+
+      var toggles = document.querySelectorAll(".c-hamburger");
+
+      for (var i = toggles.length - 1; i >= 0; i--) {
+        var toggle = toggles[i];
+        toggleHandler(toggle);
+      };
+
+      function toggleHandler(toggle) {
+        toggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          (this.classList.contains("is-active") === true) ? this.classList.remove("is-active"): this.classList.add("is-active");
+        });
+      }
+
+    })();
+  </script>
+  <script src="resources/js/jquery.stellar.min.js"></script> 
+  <script>
+
+    $(function(){
+      $(window).stellar();
+    });
+
+    $('.asd').stellar();
+    $.stellar({
+      horizontalScrolling: false,
+    });
+  </script>
+</body>
+
+</html>

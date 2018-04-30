@@ -1,0 +1,22 @@
+/** { font-family: Arial; color:#fff; text-decoration: none;}*/
+
+::selection {
+  background-color: #fff;
+  color: #ce3635;
+}
+::-moz-selection {
+  background-color: #fff;
+  color: #ce3635;
+}
+::-o-selection {
+  background-color: #fff;
+  color: #ce3635;
+}
+::-ms-selection {
+  background-color: #fff;
+  color: #ce3635;
+}
+::-webkit-selection {
+  background-color: #fff;
+  color: #ce3635;
+}
